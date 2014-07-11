@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B3FC8141-2EAC-43DF-8F21-5DE4B4EED06C</string>
+	<string>0ADD0E53-1402-43DD-A297-3D68A8C982DC</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BlocExercises</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EF1880CA-2005-41DA-A3AF-2CA3EE510B88</key>
-		<string>https://github.com/ahlerttd/ios-exercises.git</string>
+		<key>70909731-CA9A-4323-933F-B5FEDF1D0C80</key>
+		<string>ssh://github.com/ahlerttd/ios-exercises.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BlocExercises/BlocExercises.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EF1880CA-2005-41DA-A3AF-2CA3EE510B88</key>
+		<key>70909731-CA9A-4323-933F-B5FEDF1D0C80</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ahlerttd/ios-exercises.git</string>
+	<string>ssh://github.com/ahlerttd/ios-exercises.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EF1880CA-2005-41DA-A3AF-2CA3EE510B88</string>
+	<string>70909731-CA9A-4323-933F-B5FEDF1D0C80</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EF1880CA-2005-41DA-A3AF-2CA3EE510B88</string>
+			<string>70909731-CA9A-4323-933F-B5FEDF1D0C80</string>
 			<key>IDESourceControlWCCName</key>
-			<string>my-first-branch</string>
+			<string>ios-exercises</string>
 		</dict>
 	</array>
 </dict>
