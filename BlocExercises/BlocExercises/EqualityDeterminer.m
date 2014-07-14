@@ -12,12 +12,16 @@
 
 - (BOOL) string:(NSString *)string1 isTheSameAsString:(NSString *)string2 {
     
+  
+    BOOL areStringsEqual = ([string1 isEqualToString: string2]) ? YES : NO;
+    return areStringsEqual;
     
-    if ([string1 isEqualToString:string2])  {
-        return YES;
-    } else {
-        return NO;
-    }
+    
+//    if ([string1 isEqualToString:string2])  {
+//        return YES;
+//    } else {
+//        return NO;
+//    }
     
 
 }
