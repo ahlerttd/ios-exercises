@@ -13,35 +13,25 @@
 - (BOOL) string:(NSString *)string1 isTheSameAsString:(NSString *)string2 {
     
   
-    BOOL areStringsEqual = ([string1 isEqualToString: string2]) ? YES : NO;
-    return areStringsEqual;
-    
-    
-//    if ([string1 isEqualToString:string2])  {
-//        return YES;
-//    } else {
-//        return NO;
-//    }
+    return [string1 isEqualToString:string2];
+
     
 
 }
 
 - (BOOL) number:(NSNumber *)number1 isTheSameAsNumber:(NSNumber *)number2 {
+  
+    return [number1 isEqualToNumber:number2];
     
-    if ([number1 isEqualToNumber:number2]) {
-        return YES;
-    } else {
-    return NO;
-}
+
 }
 
 - (BOOL) integer:(NSInteger)integer1 isGreaterThan:(NSInteger)integer2 {
+  
+    return (integer1 > integer2);
     
-    if (integer1 > integer2) {
-        return YES;
-    } else {
-        return NO;
-    }
+    
+
     
     
    

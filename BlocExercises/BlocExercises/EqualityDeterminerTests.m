@@ -32,7 +32,7 @@
 
 - (void) testThatTwoStringsAreEqual {
     NSString *cerealString = [[NSString alloc] initWithFormat:@"Cheerios"];
-    NSString *identicalCerealString = @"Cheerios";
+    NSString *identicalCerealString = @"Cheerios`";
     BOOL cerealEquality = [self.determiner string:cerealString isTheSameAsString:identicalCerealString];
     XCTAssertTrue(cerealEquality, @"Cereals should be equal.");
 }
