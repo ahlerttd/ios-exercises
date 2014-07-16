@@ -12,42 +12,18 @@
 
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
-    NSMutableString *updatedCount = [@"" mutableCopy];
-    NSInteger count = number;
-    NSInteger countOther = otherNumber;
+
     
-    if (number < otherNumber){
-    
-    
-    while (number <= otherNumber) {
-        [updatedCount appendString: [NSString stringWithFormat:@"%ld", (long)count]];
-        count = ++number;
-        
+    NSMutableString *numbersString = [@"" mutableCopy];
+    NSInteger lowBound = (number <= otherNumber) ? number : otherNumber;
+    NSInteger highBound = (number <= otherNumber) ? otherNumber : number;
+    for (NSInteger i = lowBound; i <= highBound; ++i) {
+        NSString *nextNumberString = [NSString stringWithFormat:@"%ld", (long)i];
+        [numbersString appendString:nextNumberString];
     }
-    }
-    
-        else if (otherNumber <= number) {
-            while (otherNumber <= number) {
-                [updatedCount appendString: [NSString stringWithFormat:@"%ld", (long)countOther]];
-                countOther = ++otherNumber;
-        }
-            
-    
-    }
-    
-        else if (otherNumber == number) {
-           
-                [updatedCount appendString: [NSString stringWithFormat:@"%ld", (long)number]];
-         
-            
-            
-        }
-    
-    
-    
+    return numbersString;
     
 
-   return updatedCount;
 }
 
 @end
