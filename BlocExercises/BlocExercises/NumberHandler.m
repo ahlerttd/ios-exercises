@@ -11,18 +11,25 @@
 @implementation NumberHandler
 
 - (NSNumber *) numberThatIsTwiceAsBigAsNumber:(NSNumber *)number {
-    /* WORK HERE */
-    return @0;
+    return @([number integerValue] + [number integerValue]);
 }
 
 - (NSArray *) arrayOfNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
-    /* WORK HERE */
-    return @[];
+    NSMutableArray *numberOrder = [NSMutableArray array];
+    NSInteger lowBound = (number <= otherNumber) ? number : otherNumber;
+    NSInteger highBound = (number <= otherNumber) ? otherNumber : number;
+    for (NSInteger i = lowBound; i <= highBound; ++i) {
+        [numberOrder addObject:[NSNumber numberWithInt:i]];
+    }
+    return numberOrder;
 }
 
 - (NSInteger) lowestNumberInArray:(NSArray *)arrayOfNumbers {
-    /* WORK HERE */
-    return 0;
+    
+    NSMutableArray *list = [arrayOfNumbers mutableCopy];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:nil ascending:YES];
+    [list sortUsingDescriptors:@[sortDescriptor]];
+    return [list[0] longValue];
 }
 
 @end
