@@ -34,7 +34,7 @@
 }
 
 - (CGFloat) floatYouShouldRemember {
-    CGFloat *floatShouldRemember = [self.rememberFloat];
+    CGFloat *floatShouldRemember = self.rememberFloat;
     return *floatShouldRemember;
     //return 0.0f;
     
