@@ -20,11 +20,12 @@
 }
 
 - (void) rememberThisFloatForLater:(CGFloat)floatToRemember {
-    self.rememberFloat = &(floatToRemember);
+    self.rememberFloat = floatToRemember;
 }
 
+
 - (NSMutableArray *) arrayYouShouldRemember {
-    NSMutableArray  *shouldRemember = [self.rememberStuff mutableCopy];
+    NSMutableArray  *shouldRemember = self.rememberStuff;
     return shouldRemember;
 }
 
@@ -34,10 +35,7 @@
 }
 
 - (CGFloat) floatYouShouldRemember {
-    CGFloat *floatShouldRemember = self.rememberFloat;
-    return *floatShouldRemember;
-    //return 0.0f;
-    
+    return self.rememberFloat;
 }
 
 @end
